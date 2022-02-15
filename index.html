@@ -1,27 +1,49 @@
-<!DOCTYPE html>
-<html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>Audio Visualizer based on Three.js</title>
-  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Audio Visualizer based on Three.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"><link rel="stylesheet" href="./style2.css">
+  </head>
+<div class="options">
+    <div class="option active" style='--optionBackground:url(./1.PNG);'>
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-walking"></i>
+          </div>
+          <div class="info">
+             <div class="main">Audio Visualizer</div>
+             <div class="sub">Purple Sphere</div>
+             <button onClick="location.href='audio.html'" type="button">Select this animation</button>
+          </div>
+       </div>
+    </div>
+    <div class="option" style='--optionBackground:url(./1.PNG);'>
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-snowflake"></i>
+          </div>
+          <div class="info">
+             <div class="main">Lorem</div>
+             <div class="sub">Lorem ipsum dolor </div>
+             <button onClick="location.href='audio1.html'" type="button">Select this animation</button>
+          </div>
+       </div>
+    </div>
+    <div class="option" style='--optionBackground:url(./2.PNG);'>
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-tree"></i>
+          </div>
+          <div class="info">
+             <div class="main">Audio Visualizer</div>
+             <div class="sub">TorusKnot</div>
+             <button onClick="location.href='audio2.html'" type="button">Select this animation</button>
+          </div>
+       </div>
+    </div>
+ </div>
 
-</head>
-<body>
-<div id="content">
-    
-    <label for="thefile" class="file"> Choose an audio file
-      <input type="file" id="thefile" accept="audio/*" />
-    </label>
-
-    <audio id="audio" controls></audio>
-    <div id="out"></div>
-  </div>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
-<script src='https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.3/dat.gui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js'></script>
-<script  src="./script.js"></script>
-
-</body>
-</html>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="./script2.js"></script>
