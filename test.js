@@ -90,11 +90,18 @@ var vizInit = function () {
             );
             starGeo.vertices.push(star);
         }
+        let loader = new THREE.TextureLoader();
         let sprite = new THREE.TextureLoader().load('test.png');
         let starMat = new THREE.PointsMaterial({
             color: 0xaaaaaa,
             size: 0.7,
+            // transparent: true,
             alphaMap: sprite
+            // map: loader.load(
+            //     "test.png"
+            //   ),
+            //   transparent: true
+              // color: 0x44aa88
         });
         stars = new THREE.Points(starGeo, starMat);
         group.add(stars);

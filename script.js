@@ -59,8 +59,9 @@ function play() {
 
     var icosahedronGeometry = new THREE.IcosahedronGeometry(10, 4);
     var lambertMaterial = new THREE.MeshLambertMaterial({
-        color: 0xff00ee,
-        wireframe: true
+        // color: 0xff00ee,
+        // wireframe: true
+        map: new THREE.TextureLoader().load('./res/galaxy.png')
     });
 
     var ball = new THREE.Mesh(icosahedronGeometry, lambertMaterial);
